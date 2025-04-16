@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DD66066B-B699-637F-984F-7DA4913A5B07}</ProjectGuid>
+    <ProjectGuid>{4F9C883C-4270-057B-4890-CDB55F77C730}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>MerryYellow.CodeAssist.Editor</AssemblyName>

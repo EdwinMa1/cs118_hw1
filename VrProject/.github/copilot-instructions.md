@@ -1,8 +1,8 @@
 <!-- UNITY CODE ASSIST INSTRUCTIONS START -->
-- Project name: My project (1)
+- Project name: VrProject
 - Unity version: Unity 6000.0.46f1
 - Active game object:
-  - Name: BathTub-col
+  - Name: FloorPlan
   - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

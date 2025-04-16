@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
 
     public void HandleStartButton() 
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Assignment1");
     }
 
     public void HandleQuitButton() 
