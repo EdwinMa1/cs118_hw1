@@ -49,16 +49,13 @@ public class Player : MonoBehaviour
 
     void KeyBoardControls() 
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKey("escape"))
         {
             Screen.lockCursor = false;
             Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("MainMenu");
         }
 
-        if (Input.GetKey("escape"))
-        {
-            Application.Quit();
-        }
+        
     }
 }
