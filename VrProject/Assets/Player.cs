@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Screen.lockCursor = true;
+        //Screen.lockCursor = true;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
 
         mouse_x = Mathf.Clamp(mouse_x, -90f, 90f);
         transform.rotation = Quaternion.Euler(mouse_x, mouse_y, 0);
-        rb.linearVelocity = inputH* orientation.right * speed +inputV * orientation.forward * speed;
+        rb.velocity = inputH* orientation.right * speed +inputV * orientation.forward * speed;
 // rb.velocity = new Vector3(inputH * orientation.right * speed, rb.velocity.y, inputV * orientation.forward * speed);// * speed;
         orientation.rotation = Quaternion.Euler(0, mouse_y, 0);
 
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetKey("escape"))
         {
-            Screen.lockCursor = false;
+            //Screen.lockCursor = false;
             Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("MainMenu");
         }
