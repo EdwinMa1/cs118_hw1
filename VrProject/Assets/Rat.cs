@@ -12,17 +12,27 @@ public class Rat : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator.SetBool("Moving", moving);
+        animator.SetTrigger("SetNewState");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (rb.linearVelocity.magnitude <= 0.05f) 
+        if (moving) 
+        {
+            MovingMode();
+        }
+    }
+
+    void MovingMode() 
+    {
+        if (rb.linearVelocity.magnitude <= 0.05f)
         {
             transform.Rotate(0f, 180f, 0f, Space.Self);
         }
 
         rb.linearVelocity = transform.forward * speed;
-        transform.Rotate(0f,angle * Time.deltaTime, 0f, Space.Self);
+        transform.Rotate(0f, angle * Time.deltaTime, 0f, Space.Self);
     }
 }

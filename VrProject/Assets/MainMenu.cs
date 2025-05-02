@@ -26,6 +26,8 @@ public class MainMenu : MonoBehaviour
     public void HandleQuitButton() 
     {
         SceneManager.LoadScene("MainMenu");
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 1f;
     }
 
     public void QuitGame()
