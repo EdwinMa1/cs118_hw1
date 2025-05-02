@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
 
     void KeyBoardControls() 
     {
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKey("escape"))
+        if (Input.GetKeyDown(KeyCode.Q) )
         {
             //Screen.lockCursor = false;
             Cursor.lockState = CursorLockMode.None;
