@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
 
     public void HandleStartButton() 
     {
-        SceneManager.LoadScene("assignment_1_game_scene");
+        SceneManager.LoadScene("assignment_3_game_scene");
     }
 
     public void HandleQuitButton() 
