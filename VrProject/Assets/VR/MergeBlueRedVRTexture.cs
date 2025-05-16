@@ -6,6 +6,8 @@ public class MergeBlueRedVRTexture : MonoBehaviour
 
     public RawImage output;
     public RenderTexture LeftEye, RightEye;
+
+    public Shader removeRedShader;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
