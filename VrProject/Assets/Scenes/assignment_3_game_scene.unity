@@ -18841,10 +18841,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2baafca19f8ab3468864829faaca4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  output: {fileID: 734695939}
-  LeftEye: {fileID: 8400000, guid: ccc603767de09234498eadf6962ddca8, type: 2}
-  RightEye: {fileID: 8400000, guid: b75bd58f248bbf14a949186c29f903fb, type: 2}
-  removeRedShader: {fileID: 4800000, guid: 7a3ef9170f8d0374a8201748b909558c, type: 3}
+  leftTexture: {fileID: 8400000, guid: ccc603767de09234498eadf6962ddca8, type: 2}
+  rightTexture: {fileID: 8400000, guid: b75bd58f248bbf14a949186c29f903fb, type: 2}
+  outputImage: {fileID: 734695939}
 --- !u!1 &775599110
 GameObject:
   m_ObjectHideFlags: 0
