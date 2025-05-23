@@ -3,6 +3,7 @@ public class StairRamp : MonoBehaviour
 {
     public Animator anim;
     public Animator toiletAnim;
+    public AudioSource audioSource;
     private bool played = false;
 
     void Start()
