@@ -6,6 +6,7 @@ public class ToiletProximityOpen : MonoBehaviour
     public Transform player;
     public float distanceToOpen;
     bool isOpen = false;
+    public AudioSource sfx;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +25,7 @@ public class ToiletProximityOpen : MonoBehaviour
             {
                 isOpen = true;
                 animator.SetTrigger("OpenLid");
+                sfx.Play();
             }
         }
         else 
