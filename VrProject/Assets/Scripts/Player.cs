@@ -21,8 +21,14 @@ public class Player : MonoBehaviour
     public AudioSource footstepAudio;
     private float footstepTimer = 0f;
 
+    public static Player instance;
+    private void Awake()
+    {
+        instance = this;//no more than 1 of these in a scene too lazy to make error message
+    }
     void Start()
     {
+       
         rb = GetComponent<Rigidbody>();
         //footstepAudio = GetComponent<AudioSource>();
 

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\UI.cs" />
     <Compile Include="Assets\VR\MergeBlueRedVRTexture.cs" />
+    <Compile Include="Assets\Scripts\VRUIBillboard.cs" />
     <Compile Include="Assets\Scripts\NewMonoBehaviourScript.cs" />
   </ItemGroup>
   <ItemGroup>
