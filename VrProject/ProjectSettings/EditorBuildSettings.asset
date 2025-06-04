@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/assignment_3_game_scene.unity
     guid: 2119aaec17e98714cb539a9ee91d86fc
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 47845234a90fe48c4922692929d766ff, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c681e2b7b3ec946f7958165fd1d73607, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ef1594a6fc734486aa71f688208aaedd, type: 2}
   m_UseUCBPForAssetBundles: 0
