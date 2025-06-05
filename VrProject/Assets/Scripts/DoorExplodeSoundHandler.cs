@@ -3,7 +3,7 @@ using UnityEngine;
 public class DoorExplodeSoundHandler : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public AudioSource audio;
+    public AudioSource audioEffect;
     bool triggered = false;
     void Start()
     {
@@ -23,7 +23,7 @@ public class DoorExplodeSoundHandler : MonoBehaviour
             if (!triggered)
             {
                 triggered = true;
-                audio.Play();
+                audioEffect.Play();
             }
         }
         

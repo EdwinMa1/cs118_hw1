@@ -5,7 +5,7 @@ public class PaintingProximity : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Player player;
     public float stareTime, distance;
-    public AudioSource audio;
+    public AudioSource audioEffect;
 
     bool staring = false;
     float internalStareTime = 0f;
@@ -37,7 +37,7 @@ public class PaintingProximity : MonoBehaviour
             {
                 internalStareTime = 0f;
                 staring = false;
-                audio.Play();
+                audioEffect.Play();
             }
         }
 

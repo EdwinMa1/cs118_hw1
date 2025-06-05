@@ -40,11 +40,11 @@ public class Rat : MonoBehaviour
         if (c.gameObject.CompareTag("LaunchedObject")) 
         {
             LaunchableObject l = c.gameObject.GetComponent<LaunchableObject>();
-            //if (l.rb.velocity.magnitude >= 5f)
-            //{
+            if (l.rb.linearVelocity.magnitude >= 5f)
+            {
                 //Trigger add points
-             //   Destroy(gameObject);
-            //}
+                Destroy(gameObject);
+            }
         }
     }
 }

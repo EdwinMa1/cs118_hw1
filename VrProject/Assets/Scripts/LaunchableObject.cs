@@ -14,24 +14,11 @@ public class LaunchableObject: XRGrabInteractable{
     //bool lookedAt;
     GameObject glowSource;
 
+    public Rigidbody rb;
+
     public static float minGlowDist = 2f;
 
-    void OnBecameInvisible()
-    {
-        //lookedAt = false;
-        glowSource.SetActive(false);
-    }
-
-    // Enable this script when the GameObject moves into the camera's view
-    void OnBecameVisible()
-    {
-        //lookedAt = true;
-        if(Vector3.Distance(player.transform.position, transform.position)  <= minGlowDist)
-        {
-            glowSource.SetActive(true);
-        }
-        
-    }
+    
 
     public void Start(){
         fireAction.action.Enable();
@@ -67,9 +54,6 @@ public class LaunchableObject: XRGrabInteractable{
                 FireObject();
             }
         }
-        if(Vector3.Distance(player.transform.position, transform.position)  > minGlowDist)
-        {
-            glowSource.SetActive(false);
-        }
+       
     }
 }
