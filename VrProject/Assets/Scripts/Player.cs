@@ -7,7 +7,10 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public bool fpsMode = true;
+
     Rigidbody rb;
+
     public float speed = 5f;
     public Camera cam;
 
@@ -28,7 +31,7 @@ public class Player : MonoBehaviour
     }
     void Start()
     {
-       
+        if (!fpsMode) { return; }
         rb = GetComponent<Rigidbody>();
         //footstepAudio = GetComponent<AudioSource>();
 
@@ -47,6 +50,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!fpsMode) { return; }
+
         float inputH = Input.GetAxis("Horizontal");
         float inputV = Input.GetAxis("Vertical");
 
@@ -72,6 +77,7 @@ public class Player : MonoBehaviour
 
     void KeyBoardControls()
     {
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             //Screen.lockCursor = false;

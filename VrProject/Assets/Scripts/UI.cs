@@ -16,6 +16,7 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!Player.instance.fpsMode) { return; }
         if (Input.GetKeyDown("escape")) 
         {
             pauseButton.onClick.Invoke();

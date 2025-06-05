@@ -35,4 +35,16 @@ public class Rat : MonoBehaviour
         rb.linearVelocity = transform.forward * speed;
         transform.Rotate(0f, angle * Time.deltaTime, 0f, Space.Self);
     }
+
+    public void OnCollisionEnter(Collision c) {
+        if (c.gameObject.CompareTag("LaunchedObject")) 
+        {
+            LaunchableObject l = c.gameObject.GetComponent<LaunchableObject>();
+            //if (l.rb.velocity.magnitude >= 5f)
+            //{
+                //Trigger add points
+             //   Destroy(gameObject);
+            //}
+        }
+    }
 }
