@@ -8,6 +8,8 @@ public class Rat : MonoBehaviour
     public float angle = 0.5f;
     Rigidbody rb;
 
+    AudioSource audioToPlay;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,9 +42,12 @@ public class Rat : MonoBehaviour
         if (c.gameObject.CompareTag("LaunchedObject")) 
         {
             LaunchableObject l = c.gameObject.GetComponent<LaunchableObject>();
-            if (l.rb.linearVelocity.magnitude >= 5f)
+            print(l.rb.linearVelocity.magnitude);
+            if (l.rb.linearVelocity.magnitude >= 2f)
             {
                 //Trigger add points
+                UI.instance.ratKillNumber++;
+                UI.instance.UpdateRatCounterText();
                 Destroy(gameObject);
             }
         }

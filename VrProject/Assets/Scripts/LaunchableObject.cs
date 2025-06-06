@@ -22,6 +22,7 @@ public class LaunchableObject: XRGrabInteractable{
 
     public void Start(){
         fireAction.action.Enable();
+        rb = GetComponent<Rigidbody>();
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args){
