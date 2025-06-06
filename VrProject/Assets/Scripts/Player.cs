@@ -52,6 +52,8 @@ public class Player : MonoBehaviour
     {
         if (!fpsMode) { return; }
 
+        print("Fuck ass game");
+
         float inputH = Input.GetAxis("Horizontal");
         float inputV = Input.GetAxis("Vertical");
 
