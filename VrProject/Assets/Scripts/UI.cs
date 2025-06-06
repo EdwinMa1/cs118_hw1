@@ -50,4 +50,9 @@ public class UI : MonoBehaviour
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    public void BackToMainMenuScene()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

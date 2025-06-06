@@ -9,6 +9,7 @@ public class Rat : MonoBehaviour
     Rigidbody rb;
 
     AudioSource audioToPlay;
+    public GameObject explosion;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -49,6 +50,8 @@ public class Rat : MonoBehaviour
                 UI.instance.ratKillNumber++;
                 UI.instance.UpdateRatCounterText();
                 Destroy(gameObject);
+                explosion.transform.SetParent(null);
+                explosion.GetComponent<Animator>().SetTrigger("playBoom");
             }
         }
     }

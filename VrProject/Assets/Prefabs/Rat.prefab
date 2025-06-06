@@ -329,6 +329,7 @@ MonoBehaviour:
   animator: {fileID: 8446960203375953984}
   speed: 5
   angle: 0
+  explosion: {fileID: 3933861958825090851}
 --- !u!54 &6784534806339988112
 Rigidbody:
   m_ObjectHideFlags: 0
