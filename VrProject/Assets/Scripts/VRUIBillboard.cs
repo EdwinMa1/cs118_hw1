@@ -6,6 +6,7 @@ public class VRUIBillboard : MonoBehaviour
     Camera main_playerCamera;
     public bool isButton;
     public Button clickableCounterpart;
+    public bool destroy = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +17,7 @@ public class VRUIBillboard : MonoBehaviour
     void FixedUpdate()//don't need to update as often
     {
         transform.LookAt(main_playerCamera.transform.position);
+        if (destroy) { Destroy(gameObject); }
     }
 
     public void triggerButtonEffect() 

@@ -8,7 +8,7 @@ public class Rat : MonoBehaviour
     public float angle = 0.5f;
     Rigidbody rb;
 
-    AudioSource audioToPlay;
+    public AudioSource explodeAudio;
     public GameObject explosion;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -49,9 +49,13 @@ public class Rat : MonoBehaviour
                 //Trigger add points
                 UI.instance.ratKillNumber++;
                 UI.instance.UpdateRatCounterText();
-                Destroy(gameObject);
+
+                explosion.SetActive(true);
                 explosion.transform.SetParent(null);
                 explosion.GetComponent<Animator>().SetTrigger("playBoom");
+                explodeAudio.Play();
+                Destroy(gameObject);
+                
             }
         }
     }

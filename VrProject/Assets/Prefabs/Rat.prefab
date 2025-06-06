@@ -25,12 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841195252046599611}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7482431117333053987}
+  m_Father: {fileID: 5846105818653086618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2916219555087540421
 AudioSource:
@@ -44,8 +44,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 012316e67cf178e47a9d8294f80c2d15, type: 3}
   m_Resource: {fileID: 8300000, guid: 012316e67cf178e47a9d8294f80c2d15, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.49
+  m_PlayOnAwake: 1
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -141,13 +141,14 @@ GameObject:
   - component: {fileID: 4169452966217798764}
   - component: {fileID: 1154222851162311702}
   - component: {fileID: 8782475336785780154}
+  - component: {fileID: 7474343235394725782}
   m_Layer: 0
   m_Name: ExplosionEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5846105818653086618
 Transform:
   m_ObjectHideFlags: 0
@@ -160,7 +161,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6492758687412621356}
   m_Father: {fileID: 7482431117333053987}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4169452966217798764
@@ -232,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isButton: 0
   clickableCounterpart: {fileID: 0}
+  destroy: 0
 --- !u!95 &8782475336785780154
 Animator:
   serializedVersion: 7
@@ -254,6 +257,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &7474343235394725782
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3933861958825090851}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: edf6ddc1e452d0c45bb27d9c661f40af, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: edf6ddc1e452d0c45bb27d9c661f40af, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &4467544466895454690
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +309,6 @@ Transform:
   - {fileID: 5846105818653086618}
   - {fileID: 2583251277205475898}
   - {fileID: 134646377169589985}
-  - {fileID: 6492758687412621356}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7388781329020906394
@@ -329,6 +348,7 @@ MonoBehaviour:
   animator: {fileID: 8446960203375953984}
   speed: 5
   angle: 0
+  explodeAudio: {fileID: 2916219555087540421}
   explosion: {fileID: 3933861958825090851}
 --- !u!54 &6784534806339988112
 Rigidbody:
