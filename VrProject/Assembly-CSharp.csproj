@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Rat.cs" />
+    <Compile Include="Assets\Scripts\GazeOutline.cs" />
     <Compile Include="Assets\Scripts\DiscoBall.cs" />
     <Compile Include="Assets\Scripts\DoorExplodeSoundHandler.cs" />
     <Compile Include="Assets\Scripts\KeyDoorway.cs" />
@@ -89,6 +90,7 @@
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\OutlineShaders\UniformOutline.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
@@ -99,6 +101,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\OutlineShaders\CustomOutline-ConstantWidth.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
@@ -1339,10 +1342,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.XR.MetaOpenXR">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.MetaOpenXR.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1377,6 +1376,10 @@
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.MetaOpenXR">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.MetaOpenXR.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
