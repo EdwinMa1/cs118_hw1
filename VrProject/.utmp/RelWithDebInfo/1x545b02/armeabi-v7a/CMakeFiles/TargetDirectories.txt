@@ -1,0 +1,5 @@
+/Users/edwinma/Documents/CS178/cs118/cs118_hw1/VrProject/.utmp/RelWithDebInfo/1x545b02/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/edwinma/Documents/CS178/cs118/cs118_hw1/VrProject/.utmp/RelWithDebInfo/1x545b02/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/edwinma/Documents/CS178/cs118/cs118_hw1/VrProject/.utmp/RelWithDebInfo/1x545b02/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+/Users/edwinma/Documents/CS178/cs118/cs118_hw1/VrProject/.utmp/RelWithDebInfo/1x545b02/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+/Users/edwinma/Documents/CS178/cs118/cs118_hw1/VrProject/.utmp/RelWithDebInfo/1x545b02/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir
